@@ -62,10 +62,11 @@ $destinationGray: rgb(8, 28, 58);
     }
     .headerPlay {
       width: 500px;
-      height: 70%;
+      height: 500px;
       display: flex;
       align-items: center;
       position: relative;
+      top:15%;
     
       .headerIconOuter {
         width: 150px;
@@ -77,10 +78,11 @@ $destinationGray: rgb(8, 28, 58);
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 33%;
-        left: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 5;
-        transition: all 1.2s ease;
+        transition: all 0.5s ease-in-out;
       }
     
       .headerIconInner {
@@ -93,7 +95,7 @@ $destinationGray: rgb(8, 28, 58);
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 1.5s ease;
+        transition: all 0.3s ease-in;
       }
     
       .playIcon {
@@ -105,9 +107,12 @@ $destinationGray: rgb(8, 28, 58);
       }
     
       .headerIcon {
-        width: 400px;
-        height: 400px;
-        position: relative;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     
         .borderFirst,
         .borderSecond {
@@ -128,45 +133,47 @@ $destinationGray: rgb(8, 28, 58);
           width: 88%;
           height: 88%;
           transition: all 1s ease;
-        }
-    
-        .bcgContainer {
-          width: 300px;
-          height: 300px;
-          border-radius: 50%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          transition: all 1.2s ease;
-        }
-    
-        .bcgVideo {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          visibility: hidden;
-          object-fit: cover;
-    
-          source {
-            width: 100%;
-            height: 100%;
+          .bcgContainer {
+            width: 78%;
+            height: 78%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 1.2s ease;
+            .bcgVideo {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              visibility: hidden;
+              object-fit: cover;
+        
+              source {
+                width: 80%;
+                height: 80%;
+              }
+            }
           }
         }
+    
       }
     
       /* Hover effect when hovering over .headerIconOuter */
       .headerIconOuter:hover + .headerIcon {
         .borderFirst {
           background-color: rgba(192, 192, 211, 0.2);
+          transform: scale(1.8);
         }
     
         .borderSecond {
           background-color: rgba(192, 192, 211, 0.2);
+          transform: scale(1.3);
         }
     
         .bcgVideo {
           visibility: visible;
+          transform: scale(1.01);
         }
       }
     

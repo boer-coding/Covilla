@@ -143,7 +143,7 @@ $destinationGray: rgb(8, 28, 58);
     .chooseDesContainer {
       width: 83%;
       height: 893px;
-      padding: 140px 0px 140px 80px;
+      padding: 140px 0px 140px 0px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -480,12 +480,14 @@ $destinationGray: rgb(8, 28, 58);
     justify-content: center;
     align-content: center;
     .popContainer {
-      width: 1364px;
+      width: 80%;
       height: 684px;
+      margin-left: -10px;
       padding-bottom: 140px;
-      margin-left: 36px;
+      // margin-left: 36px;
       position: absolute;
-      top: -120px;
+      left: 50%;
+      transform: translate(-50%, -15%);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1078,7 +1080,7 @@ $destinationGray: rgb(8, 28, 58);
       .aboutContainer {
         width: 80%;
         height: 247px;
-        padding: 140px 0px 100px 80px;
+        padding: 140px 40px 100px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

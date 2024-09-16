@@ -27,7 +27,7 @@ $destinationGray: rgb(8, 28, 58);
     display: flex;
     justify-content: space-around;
     .headerText {
-      width: 700px;
+      width: 45%;
       height: 60%;
       color: white;
       display: flex;
@@ -61,12 +61,12 @@ $destinationGray: rgb(8, 28, 58);
       }
     }
     .headerPlay {
-      width: 500px;
+      width: 45%;
       height: 500px;
       display: flex;
       align-items: center;
       position: relative;
-      top:15%;
+      top:10%;
     
       .headerIconOuter {
         width: 150px;

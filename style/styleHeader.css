@@ -25,7 +25,7 @@
 }
 
 .headerBCG .headerMain .headerText {
-  width: 700px;
+  width: 45%;
   height: 60%;
   color: white;
   display: flex;
@@ -63,12 +63,12 @@
 }
 
 .headerBCG .headerMain .headerPlay {
-  width: 500px;
+  width: 45%;
   height: 500px;
   display: flex;
   align-items: center;
   position: relative;
-  top: 15%;
+  top: 10%;
   /* Hover effect when hovering over .headerIconOuter */
   /* Optional: To style .headerIconOuter when it is hovered, if needed */
 }

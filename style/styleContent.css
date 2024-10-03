@@ -65,11 +65,6 @@
   /* Scale up the active item */
 }
 
-.content .acrossWorld .carouselPics .carousel .carouseUl .activeNaN {
-  transform: scale(1);
-  /* Scale up the active item */
-}
-
 .content .acrossWorld .carouselPics .carousel .carouseUl .carouseLi {
   width: 650px;
   height: 405px;

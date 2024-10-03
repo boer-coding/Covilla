@@ -50,7 +50,6 @@ $destinationGray: rgb(8, 28, 58);
         width: 700px;
         height: 480px;
         margin: 0 auto;
-        // display: flex;
         position: relative;
 
         .carouseUl {
@@ -61,9 +60,7 @@ $destinationGray: rgb(8, 28, 58);
           .active {
             transform: scale(1.07); /* Scale up the active item */
           }
-          .activeNaN {
-            transform: scale(1); /* Scale up the active item */
-          }
+       
           .carouseLi {
             width: 650px;
             height: 405px;

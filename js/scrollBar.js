@@ -34,16 +34,23 @@ function navBar() {
       navTab.style.borderBottom = "1px solid rgba(192, 192, 211, 0.2)"; // Ensure the border is visible when scrolling
     }
 
-    if (height > 35) {
-      navTabContainer.style.opacity = "1"; // Make the container visible
+    if (scrollTop > 35) {
+      // Make the container visible
+      navTabContainer.style.opacity = "1";
       navLogo.style.color = "rgb(74, 89, 111)";
       navDesButtonText.style.color = "rgb(74, 89, 111)";
-      navDesButtonImg.style.backgroundImage = "url(../img/button/pull-des.svg)";
+      console.log(navDesButtonImg.style.backgroundImage ); 
+      navDesButtonImg.style.backgroundImage = "url('img/button/pull-des.svg')";
+
+      
+    
     } else {
-      navTabContainer.style.opacity = "0"; // Hide the container
+      // Hide the container
+      navTabContainer.style.opacity = "0";
       navLogo.style.color = "white";
       navDesButtonText.style.color = "white";
-      navDesButtonImg.style.backgroundImage = "url(../img/button/pull-white.svg)";
+      navDesButtonImg.style.backgroundImage = "url('img/button/pull-white.svg')";
+
     }
   });
 }

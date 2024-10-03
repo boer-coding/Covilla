@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covilla</title>
     <link rel="stylesheet" href="./style/styleHeader.css" />
+    <link rel="icon" href="./img/social/favicon.ico" type="image/x-icon">
+
   </head>
   <body>
     <section class="hiddenSection">
@@ -219,12 +221,12 @@
         <div class="carouselPics">
           <div class="carousel">
             <ul class="carouseUl">
-              <li class="carouseLi carouseEgHidden"></li>
+              <li class="carouseLi carouseEg"></li>
               <li class="carouseLi carouseFr"></li>
               <li class="carouseLi carouseIn active"></li>
               <li class="carouseLi carouseGr"></li>
               <li class="carouseLi carouseEg"></li>
-              <li class="carouseLi carouseFrHidden"></li>
+              <li class="carouseLi carouseFr"></li>
             </ul>
           </div>
           <div class="carouselButton">
@@ -1004,10 +1006,11 @@
     items.forEach((item) => {
       selector(item);
     });
-    import plan from "./js/plan.js";
-    plan();
+ 
 
     import about from "./js/about.js";
     about();
+
+    
   </script>
 </html>

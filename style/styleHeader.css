@@ -62,7 +62,7 @@
   transition: all 1s ease;
 }
 
-.headerBCG .headerMain .headerPlay {
+.headerBCG .headerMain #headerPlay {
   width: 45%;
   height: 500px;
   display: flex;
@@ -73,7 +73,7 @@
   /* Optional: To style .headerIconOuter when it is hovered, if needed */
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter {
+.headerBCG .headerMain #headerPlay .headerIconOuter {
   width: 150px;
   height: 150px;
   border-color: rgba(192, 192, 211, 0.2);
@@ -90,7 +90,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.headerBCG .headerMain .headerPlay .headerIconInner {
+.headerBCG .headerMain #headerPlay .headerIconInner {
   width: 88px;
   height: 88px;
   border-style: solid;
@@ -103,7 +103,7 @@
   transition: all 0.3s ease-in;
 }
 
-.headerBCG .headerMain .headerPlay .playIcon {
+.headerBCG .headerMain #headerPlay .playIcon {
   width: 14px;
   height: 14px;
   background-size: cover;
@@ -111,7 +111,7 @@
   background-image: url(../img/button/play-icon.svg);
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon {
+.headerBCG .headerMain #headerPlay .headerIcon {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -120,8 +120,8 @@
   transform: translate(-50%, -50%);
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderFirst,
-.headerBCG .headerMain .headerPlay .headerIcon .borderSecond {
+.headerBCG .headerMain #headerPlay .headerIcon .borderFirst,
+.headerBCG .headerMain #headerPlay .headerIcon .borderSecond {
   border-radius: 50%;
   background-color: transparent;
   display: flex;
@@ -130,18 +130,18 @@
   transition: all 0.8s ease;
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderFirst {
+.headerBCG .headerMain #headerPlay .headerIcon .borderFirst {
   width: 100%;
   height: 100%;
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderSecond {
+.headerBCG .headerMain #headerPlay .headerIcon .borderSecond {
   width: 88%;
   height: 88%;
   transition: all 1s ease;
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderSecond .bcgContainer {
+.headerBCG .headerMain #headerPlay .headerIcon .borderSecond .bcgContainer {
   width: 78%;
   height: 78%;
   border-radius: 50%;
@@ -152,7 +152,7 @@
   transition: all 1.2s ease;
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderSecond .bcgContainer .bcgVideo {
+.headerBCG .headerMain #headerPlay .headerIcon .borderSecond .bcgContainer .bcgVideo {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -160,31 +160,31 @@
   object-fit: cover;
 }
 
-.headerBCG .headerMain .headerPlay .headerIcon .borderSecond .bcgContainer .bcgVideo source {
+.headerBCG .headerMain #headerPlay .headerIcon .borderSecond .bcgContainer .bcgVideo source {
   width: 80%;
   height: 80%;
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter:hover + .headerIcon .borderFirst {
+.headerBCG .headerMain #headerPlay .headerIconOuter:hover + .headerIcon .borderFirst {
   background-color: rgba(192, 192, 211, 0.2);
   transform: scale(2);
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter:hover + .headerIcon .borderSecond {
+.headerBCG .headerMain #headerPlay .headerIconOuter:hover + .headerIcon .borderSecond {
   background-color: rgba(192, 192, 211, 0.2);
   transform: scale(1.3);
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter:hover + .headerIcon .bcgVideo {
+.headerBCG .headerMain #headerPlay .headerIconOuter:hover + .headerIcon .bcgVideo {
   visibility: visible;
   transform: scale(1.01);
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter:hover {
+.headerBCG .headerMain #headerPlay .headerIconOuter:hover {
   background-color: white;
 }
 
-.headerBCG .headerMain .headerPlay .headerIconOuter:hover .headerIconInner {
+.headerBCG .headerMain #headerPlay .headerIconOuter:hover .headerIconInner {
   background-color: #081c3a;
   border-color: #081c3a;
 }

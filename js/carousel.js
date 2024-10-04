@@ -15,29 +15,27 @@ function caro() {
   trans(); // Initialize the mouse move effect for the current item
 
   carButtonRight.addEventListener("click", () => {
-    carouseUl.style.transition = "left 1.8s ease";
     items[carIndex].classList.remove("active");
     carIndex++;
-    if (carIndex < total) {
-      items[carIndex].classList.add("active");
-      move -= itemWidth;
-      carouseUl.style.left = `${move}px`;
-      trans(); // Update mouse move effect for the new item
 
-    }
     if (carIndex === total) {
       setTimeout(() => {
-        items[carIndex].classList.add("active");
-
         carouseUl.style.transition = "none";
         carIndex = 1;
         trans(); // Update mouse move effect for the new item
 
         move = -710;
+
         items[carIndex].classList.add("active");
         carouseUl.style.left = `${move}px`;
-        items[total].classList.remove("active");
-      }, 800); // Match transition duration
+      }, 0); // Match transition duration
+    } else {
+      items[carIndex].classList.add("active");
+      move -= itemWidth;
+      carouseUl.style.left = `${move}px`;
+      carouseUl.style.transition = "left 1.8s ease";
+
+      trans(); // Update mouse move effect for the new item
     }
   });
 
@@ -45,33 +43,26 @@ function caro() {
     carouseUl.style.transition = "left 0.8s ease";
     items[carIndex].classList.remove("active");
     carIndex--;
-    if (carIndex > 0) {
-        trans(); // Update mouse move effect for the new item
-
-      items[carIndex].classList.add("active");
-      move += itemWidth;
-      carouseUl.style.left = `${move}px`;
-    }
 
     if (carIndex === 0) {
-      items[total].style.transition = "none";
       carouseUl.style.transition = "none";
-      items[total].classList.add("active");
 
       carIndex = items.length - 2;
       trans(); // Update mouse move effect for the new item
 
-      move = -itemWidth * (items.length - 2);
+      move = -itemWidth * carIndex;
       carouseUl.style.left = `${move}px`;
+      items[carIndex].classList.add("active");
 
       setTimeout(() => {
-        items[total].style.transition = "all 0.8s ease";
-        items[total].classList.remove("active");
-
-        items[carIndex].classList.add("active");
         carouseUl.style.transition = "left 0.8s ease";
-
       }, 800); // Match transition duration
+    } else {
+      trans(); // Update mouse move effect for the new item
+
+      items[carIndex].classList.add("active");
+      move += itemWidth;
+      carouseUl.style.left = `${move}px`;
     }
   });
 }
@@ -86,7 +77,7 @@ function trans() {
     carouseLi.addEventListener("mousemove", function (e) {
       const rect = e.target.getBoundingClientRect();
       const xPos = ((e.clientX - rect.left) / rect.width) * 100;
-      const yPos = ((e.clientY - rect.top) / rect.height) *100;
+      const yPos = ((e.clientY - rect.top) / rect.height) * 100;
       e.target.style.backgroundPosition = `${xPos}% ${yPos}%`;
     });
 
